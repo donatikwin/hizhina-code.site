@@ -1,0 +1,297 @@
+main {
+  float: left;
+  margin-top: 20px;
+}
+
+aside {
+  float: left;
+  margin-top: 20px;
+}
+
+.news {
+  float: left;
+}
+
+.heading {
+  font-size: 1.4em;
+  font-family: 'Montserrat', sans-serif;
+  border-bottom: 2px solid #db6e6e;
+  float: left;
+  color: #4f4f4f;
+  padding: 0px 5px;
+}
+
+.heading:first-letter {
+  color: #db6e6e ;
+}
+
+.article {
+  width: 40%;
+  float: left;
+  margin-right: 10%;
+  margin-bottom: 20px;
+  border: 1px solid #e3e3e3;
+  background-color: #fff;
+  box-sizing: border-box;
+  max-width: 350px;
+  border-radius: 5px;
+  overflow: hidden;
+  
+}
+
+.article>span, .article>a>span {
+  font-size: 17px;
+  width: 85%;
+  margin: 7px 7.5%;
+  color: #000;
+  float: left;
+  font-weight: 400;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.article>a>span:hover {
+  color: rgba(217, 91, 72, 1);
+}
+
+.article>span:last-of-type {
+  font-size: 15px;
+  font-weight: 200;
+  margin-top: 0;
+  color: #6e6e6e;
+  height: 8.5em; /* Установите желаемую максимальную высоту */
+  overflow: hidden; /* Скрывает текст, выходящий за пределы высоты */
+}
+
+.article>img {
+  border-radius: 5px 5px 0 0;
+  width: 100%;
+  height: 100px;
+}
+
+.article>img {
+  border-radius: 5px 5px 0 0;
+  width: 100%;
+  height: 100px;
+}
+
+.img-hover-zoom {
+  transition: transform 0.5s ease; /* Анимация увеличения продолжительностью 0.5 секунд */
+}
+
+.img-hover-zoom:hover {
+  transform: scale(1.03); /* Увеличивает изображение на 10% при наведении */
+}
+
+.news > a > .btn {
+  margin-bottom: 20px;
+  float: left;
+  margin-left: 30%;
+}
+
+
+.courses {
+  float: left;
+  width: 70%;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-left: 40px; 
+}
+
+.course> {
+  width: 100%;
+  margin-bottom: 10px;
+  flex: 0 1 calc(50% - 10px);
+  min-height: 300px;
+ 
+}
+
+
+.course .title_course.bigger {
+  height: 50px;
+  
+}
+
+
+.course .title_course.bigger:hover {
+ color:  rgba(217, 91, 72, 1);
+}
+
+.course .title_course {
+  font-weight: 500;
+  height: 37px;
+  display: block;
+  font-size: .875rem;
+  float: left;
+  font-family: 'Montserrat', sans-serif;
+  color: #646464;
+  font-size: 1.2em;
+  transition: all .6s ease;
+  -ms-transition: all .6s ease;
+  -o-transition: all .6s ease;
+  -moz-transition: all .6s ease;
+  -webkit-transition: all .6s ease;
+}
+
+.course .time-start {
+  font-size: 14px;
+  color: rgba(217, 91, 72, 1);
+  font-weight: 200;
+}
+
+.course>a>img {
+  border: 2px solid #dfdfdf;
+  border-radius: 5px;
+  width: 40%;
+  float: left;
+  margin-right: 10px;
+  
+}
+
+.course>a>img {
+  width: 60%;
+  height: auto; /* Поддерживает пропорции изображения */
+}
+
+.courses>a>.btn {
+  flex: 1 0 100%; /* Занимает всю ширину строки */
+  margin-top: 10px; /* Дополнительный отступ сверху */
+  text-align: center;
+  float: left;
+}
+
+
+
+
+
+/* ///////////////////////////////////////////////////////////////////////////////// */
+
+/* //////                  АДАПТАЦИЯ БЛОКОВ MAIN AND ASIDE                   ////// */
+
+/* ///////////////////////////////////////////////////////////////////////////////// */
+
+@media screen and (max-width: 1424px) {
+  .course {
+    flex: 0 1 100%; /* На меньших экранах делает блок курса на всю ширину */
+  }
+}
+
+@media screen and (max-width: 1210px) {
+  .course {
+    flex: 1 0 100%; /*
+На меньших экранах делает блок курса на всю ширину */
+}
+}
+
+
+@media (min-width: 1051px) {
+  main {
+    width: 60%;
+    margin-left: 3%;
+  }
+
+  aside {
+    width: 30%;
+    margin-left: 2%;
+  }
+
+  .news {
+    margin-left: 10%;
+    width: 90%;
+  }
+}
+
+@media (max-width: 1051px) and (min-width: 911px) {
+  main {
+    width: 65%;
+    margin-left: 2%;
+  }
+
+  aside {
+    width: 32%;
+  }
+
+  .news {
+    margin-left: 4%;
+    width: 96%;
+  }
+}
+
+@media (max-width: 910px) and (min-width: 500px) {
+  main {
+    width: 90%;
+    margin-left: 5%;
+  }
+
+  aside {
+    width: 50%;
+    margin-left: 25%;
+  }
+
+  .news {
+    margin-left: 4%;
+    width: 96%;
+  }
+}
+
+@media (max-width: 499px) {
+  main {
+    width: 90%;
+    margin-left: 5%;
+  }
+
+  aside {
+    width: 80%;
+    margin-left: 10%;
+  }
+
+  .news {
+    margin-left: 4%;
+    width: 96%;
+  }
+}
+
+@media (min-width: 1220px) {
+
+  .article {
+    width: 40%;
+    margin-right: 10%;
+  }
+}
+
+
+@media (max-width: 1219px) and (min-width: 911px){
+
+  .article {
+    width: 46%;
+    margin-right: 5%;
+  }
+}
+
+@media (max-width: 649px) and (min-width: 500px){
+
+  .article {
+    width: 70%;
+    margin-right: 15%;
+  }
+}
+
+@media (max-width: 499px) {
+.article {
+  width: 90%;
+  margin-right: 5;
+}
+}
+
+@media (max-width: 600px) {
+  .courses>a>.btn {
+    margin-left: 5% !important;
+  }
+  
+}
+  
+@media (max-width: 440px) {
+  main>a>.btn {
+    margin-left: 5% !important;
+  }
+}
+  

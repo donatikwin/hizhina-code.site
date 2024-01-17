@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Информационно-развлекательный портал для программистов! Обучающие курсы, новости в сфере IT и многое другое">
+  <meta name="keywords" content="Hizhina Codera, Hizhina-Codera, IT, курсы,новости,программирование,python,html,css,javascript,frontend,backend,fullstack,develop,website,уроки">
+  <title>Hizhina Codera - Сайт для разработчиков</title>
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="stylesheet" href="/css/main-page.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="/img/favicon.ico" rel="shortcut icon" type="img/x-icon">
+  <style>
+    main {
+      width: 92%;
+      margin-bottom: 6%;
+    }
+    .course-card {
+        background: rgba(0, 0, 0, 0.6);
+    }
+    
+    .course-card:hover {
+        background:
+rgba(0, 0, 0, 0.8);
+}
+
+.play-icon {
+    background-color: white;
+    border-radius: 50%;
+    padding: 0.25rem;
+}
+</style>
+</head>
+<body>
+
+<div class="wrapper">
+  <div class="content">
+      
+          <header class="header"> <!-- ///    header    /// -->
+
+              <div id="logo">  <!--logo-->
+                    <a href="/index.html" title="на главную">
+                        <img src="/img/logo.svg" alt="logo" title="hizhina-Codera.site">
+                        <span>Hizhina-Codera</span>
+                    </a>
+              </div>
+
+              <div id="about">  <!--Доп.инфа-->
+                  <a href="/ad.html" title="Узнать подробнее об рекламе">Реклама</a>
+                  <a href="/ad.html" title="Написать нам письмо">Обратная связь</a>
+              </div>
+
+              <div id="reg_auth">
+                <!-- Login -->
+                  <a href="/registration-and-login/login-and-registration-form-in-html-css.html#login" title="Войти в кабинет пользователя">
+                    <div class="btn">
+                      Войти
+                    </div>
+                  </a>
+              
+                <!-- Registration -->
+                  <a href="/registration-and-login/login-and-registration-form-in-html-css.html#signup" title="Зарегистрироваться на сайте">
+                    <div class="btn">
+                      Регистрация
+                    </div>
+                  </a>
+              </div>
+          </header>
+          <!-- ////////////////////////////////////////// -->
+          <!-- /////////////    NAV    ////////////////// -->
+          <!-- ////////////////////////////////////////// -->
+            <nav>  <!-- ///    NAV    /// -->
+                <div id="menuShow"><i class="fa fa-bars" aria-hidden="true"></i></div>
+                <div id="hideMenu">
+                      <a href="/html-news/main-news-page.html">IT новости</a>
+                      <a href="">Курсы</a>
+                      <a href="">Сайты на заказ</a>
+                      <a href="/404/404.html">Форум</a>
+                      <a href="/404/404.html">IT задачи</a>
+                </div>
+
+                <div id="search">
+                    <span>Поиск</span>
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                 </div>
+
+
+                <div id="mobileMenu">
+                  <a href="/html-news/main-news-page.html">IT новости</a><br>
+                  <a href="">Курсы</a><br>
+                  <a href="">Сайты на заказ</a><br>
+                  <a href="/404/404.html">Форум</a><br>
+                  <a href="/404/404.html">IT задачи</a>
+                  <hr>
+                  <a href="" class="reg-m">Регистрация</a>
+                  <a href="" class="log-m">Войти</a>
+                </div>
+             </nav>
+<!-- ////////////////////////////////////////////////// -->
+<main>
+  <h1 class="text-5xl font-bold mb-6">Курсы программирования</h1>
+  <div class="flex space-x-2 mb-6">
+      <button class="bg-orange-500 text-white px-4 py-2 rounded hover:bg-blue-600">Все</button>
+      <button class="bg-gray-200 text-gray-700 px-4 py-2 rounded hover:bg-orange-200">Игры</button>
+      <button class="bg-gray-200 text-gray-700 px-4 py-2 rounded hover:bg-orange-200">Сайты</button>
+      <button class="bg-gray-200 text-gray-700 px-4 py-2 rounded hover:bg-orange-200">Дизайн</button>
+      <button class="bg-gray-200 text-gray-700 px-4 py-2 rounded hover:bg-orange-200">Языки</button>
+      <button class="bg-gray-200 text-gray-700 px-4 py-2 rounded hover:bg-orange-200">Прочее</button>
+      <button class="bg-gray-200 text-gray-700 px-4 py-2 rounded hover:bg-orange-200">Платные</button>
+  </div>
+  <div class="grid grid-cols-3 gap-4">
+    <!-- Course Card 1 -->
+    <div class="course-card rounded-lg p-4 text-white">
+      <a href="one-course/html-course.html">
+    <img src="/img/courses/course-html.jpg" alt="Course thumbnail for Unity Development" class="rounded-lg mb-4">
+    <div class="flex justify-between items-center mb-4">
+        <span class="text-sm bg-gray-700 px-2 py-1 rounded"># Сайты</span>
+        <span class="play-icon">
+            <i class="fas fa-play"></i>
+        </span>
+      </a>
+    </div>
+    <h3 class="text-lg font-bold mb-2">Курс по языку - HTML</h3>
+    <p class="text-sm">10 урока</p>
+</div>
+<!-- Course Card 2 -->
+<div class="course-card rounded-lg p-4 text-white">
+    <img src="https://placehold.co/320x180" alt="Course thumbnail for Python GUI Apps" class="rounded-lg mb-4">
+   
+<div class="flex justify-between items-center mb-4">
+            <span class="text-sm bg-gray-700 px-2 py-1 rounded"># Сайты</span>
+            <span class="play-icon">
+                <i class="fas fa-play"></i>
+            </span>
+        </div>
+        <h3 class="text lg font-bold mb-2">Курс по языку - CSS</h3>
+        <p class="text-sm">18 уроков</p>
+    </div>
+    <!-- Course Card 3 -->
+    <div class="course-card rounded-lg p-4 text-white">
+        <img src="https://placehold.co/320x180" alt="Course thumbnail for Next JS" class="rounded-lg mb-4">
+        <div class="flex justify-between items-center mb-4">
+            <span class="text-sm bg-gray-700 px-2 py-1 rounded">#  Сайты</span>
+            <span class="play-icon">
+                <i class="fas fa-play"></i>
+            </span>
+        </div>
+        <h3 class="text-lg font-bold mb-2">Верстка сайта </h3>
+<p class="text-sm">8 уроков</p>
+</div>
+</div>
+
+
+<!-- Additional Section -->
+<div class="grid grid-cols-3 gap-4 mt-8">
+<!-- Course Card 4 -->
+<div class="course-card rounded-lg p-4 text-white">
+    <img src="https://placehold.co/320x180" alt="Course thumbnail for AJAX Technology" class="rounded-lg mb-4">
+    <div class="flex justify-between items-center mb-4">
+        <span class="text-sm bg-gray-700 px-2 py-1 rounded"># Веб сайты</span>
+        <span class="play-icon">
+            <i class="fas fa-play"></i>
+        </span>
+    </div>
+    <h3 class="text-lg font-bold mb-2">скоро</h3>
+    <p class="text-sm">0 уроков</p>
+</div>
+<!-- Course Card 5 -->
+<div class="course-card rounded-lg p-4 text-white">
+    <img src="https://placehold.co/320x180" alt="Course thumbnail for jQuery" class="rounded-lg mb-4">
+    <div class="flex justify-between items-center mb-4">
+        <span class="text-sm bg-gray-700 px-2 py-1 rounded"># Веб сайты</span>
+        <span class="play-icon">
+            <i class="fas fa-play"></i>
+        </span>
+    </div>
+    <h3 class="text-lg font-bold mb-2">скоро</h3>
+<p class="text-sm">0 урока</p>
+</div>
+<!-- Course Card 6 -->
+<div class="course-card rounded-lg p-4 text-white">
+<img src="https://placehold.co/320x180" alt="Course thumbnail for HTML5 and CSS3 Site Layout" class="rounded-lg mb-4">
+<div class="flex justify-between items-center mb-4">
+<span class="text-sm bg-gray-700 px-2 py-1 rounded"># Веб сайты</span>
+<span class="play-icon">
+<i class="fas fa-play"></i>
+</span>
+</div>
+<h3 class="text-lg font-bold mb-2">Скоро</h3>
+<p class="text-sm">0 уроков</p>
+</div>
+</div>
+</main>
+               
+    </div> <!---div content-->
+      <footer> <!-- ///    FOOTER    /// -->
+
+          <div class="site-name">
+              <span>Hizhina-Codera</span> - сообщество программистов!
+          </div>
+
+          <div id="clear"></div>
+          <div class="footer_menu">
+              <a href="ad.html" title="узнать детальнее про рекламу">Реклама</a>
+              <a href="#!" title="Поддержать проект">Поддержать проект</a>
+              <a href="kontakti.html" title="Обратная связь">Обратная связь</a>
+          </div>
+          <div id="rights">
+              <a href="#!">Все права защищены &copy; <?=date ("Y")?></a>
+          </div>
+          <div id="social">
+              <a href="https://vk.com/danilochkadonatikov" target="_blank"><i class="fa-brands fa-vk"></i></a>
+              <a href="https://t.me/hizhinadonatikaaa"><i class="fa-brands fa-telegram" target="_blank"></i></a>
+              <a href="https://www.tiktok.com/@donatikwin?_t=8j30Th66WQg&_r=1"><i class="fa-brands fa-tiktok" target="_blank"></i></a>           
+          </div>
+          
+      </footer>
+
+  </div> 
+
+<script src="js/javascript.js"></script>
+  <script src="https://kit.fontawesome.com/658e6627a9.js" crossorigin="anonymous"></script>
+
+    <!-- JQuery -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+      <!-- code for JQuery -->
+        
+        <script> 
+          $('#menuShow').click (function() {
+              if ($('#mobileMenu').is(':visible'))
+                $('#mobileMenu').hide ();
+              else 
+               $('#mobileMenu').show ();
+          });
+
+          $(document).scroll (function () {
+            if ($(document).width () > 785) {
+              if ($(document).scrollTop() > $('header').height() +10 )
+                  $('nav').addClass ('fixed');
+            else
+            $('nav').removeClass ('fixed');
+              }
+          });
+
+          window.onresize = function (event) {
+            $('#mobileMenu').hide ();
+          };
+        </script>
+  </body></html>
